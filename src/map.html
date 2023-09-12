@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('blocks/head/head.html',{
+		"title":"Index"
+	})
+	<body class="body">
+		<style>
+			.map-navigation__header {
+				padding: 24px 48px;
+				background-color: rgb(29, 29, 29);
+			}
+			.map-navigation__title {
+				color: #fff;
+			}
+			.map-navigation__item a {
+				font-size: 18px;
+				line-height: 24px;
+				color: #292929;
+				text-decoration: none;
+				font-weight: 500;
+				display: block;
+				padding: 8px 48px;
+				-webkit-transition: color 0.25s ease, padding 0.35s ease;
+				-o-transition: color 0.25s ease, padding 0.35s ease;
+				transition: color 0.25s ease, padding 0.35s ease;
+			}
+			.map-navigation__item a:hover {
+				color: #ff771d;
+				padding-left: 62px;
+			}
+			.map-navigation__item:nth-child(even) a {
+				background-color: rgba(229, 229, 229, 0.3);
+			}
+			@media only screen and (max-width: 767px) {
+				.map-navigation__header {
+					padding: 24px 32px;
+				}
+				.map-navigation__item a {
+					padding: 8px 32px;
+					font-size: 16px;
+					line-height: 21px;
+				}
+				.map-navigation__item a:hover {
+					padding-left: 48px;
+				}
+			}
+		</style>
+		<main class="main">
+			<div class="map-navigation">
+				<div class="map-navigation__header">
+					<div class="h2 map-navigation__title">
+						Карта сайта
+					</div>
+				</div>
+				<div class="map-navigation__body">
+					<ul class="map-navigation__list">
+						<li class="map-navigation__item">
+							<a href="index.html" target="_blank">
+								index.html
+							</a>
+						</li>
+						<li class="map-navigation__item">
+							<a href="ui.html" target="_blank">
+								ui.html
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+
+		<script src="js/vendors.min.js"></script>
+		<script src="js/script.min.js"></script>
+	</body>
+</html>
